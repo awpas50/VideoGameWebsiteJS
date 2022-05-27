@@ -368,3 +368,45 @@ line 1 and line 3 will rotate 45deg, where line 2 will disappear. */
     background: var(--text-color);
     transition: 0.2s all linear;
 }
+
+/* New release */
+.new-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.2rem;
+}
+
+.next-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.next-page a {
+    background: var(--main-color);
+    padding: 15px 20px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.next-page a:hover {
+    background: var(--light-color);
+    transition: 0.3s all linear;
+}
+
+/* Copyright */
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
