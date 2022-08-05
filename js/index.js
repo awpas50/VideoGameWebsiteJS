@@ -63,10 +63,12 @@ var swiper2 = new Swiper(".home-content", {
 
 // Custom Scroll Bar
 window.onscroll = function () { myfunction() };
-
+document.getElementById('scroll-bar').style.width = 0;
 function myfunction() {
+  
   var windScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (windScroll / height) * 100;
   document.getElementById('scroll-bar').style.width = scrolled + '%';
+  document.getElementById('percentage').innerHTML = Math.round(scrolled) + "%";
 }
